@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wifiItem_ll"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wifiItem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TP-LINK-5DF123"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/wifiItem_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="已连接"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.imstlife.wifidemo.view.WiFiView
+            android:id="@+id/wifiItem_wifi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:src="@mipmap/wifi4" />
+    </LinearLayout>
+
+</LinearLayout>
